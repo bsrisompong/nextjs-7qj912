@@ -31,15 +31,13 @@ export default function Home(props) {
               </a>
             </h1>
             <div className="home__badges">
-              <span className="home__badges__badge badge--primary">
+              <div className="home__badges__badge badge--primary">
                 LIFF Starter
-              </span>
-              <span className="home__badges__badge badge--secondary">
-                nextjs
-              </span>
-              <span className="home__badges__badge badge--primary">
+              </div>
+              <div className="home__badges__badge badge--secondary">nextjs</div>
+              <div className="home__badges__badge badge--primary">
                 {packageJson.version}
-              </span>
+              </div>
               <a
                 href="https://github.com/line/line-liff-v2-starter"
                 target="_blank"
