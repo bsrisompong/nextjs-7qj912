@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import packageJson from '../package.json';
@@ -85,6 +86,30 @@ export default function Home(props) {
           rel="noopener noreferrer"
         >
           Powered by{' '}
+        </a>
+        <a
+          href="https://developers.line.biz/en/docs/liff/developing-liff-apps/"
+          target="_blank"
+          rel="noreferrer"
+          className="home__buttons__button button--primary"
+        >
+          LIFF Documentation
+        </a>
+        <a
+          href="https://liff-playground.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="home__buttons__button button--tertiary"
+        >
+          LIFF Playground
+        </a>
+        <a
+          href="https://developers.line.biz/console/"
+          target="_blank"
+          rel="noreferrer"
+          className="home__buttons__button button--secondary"
+        >
+          LINE Developers Console
         </a>
       </footer>
     </div>
