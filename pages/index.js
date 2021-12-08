@@ -2,7 +2,12 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import packageJson from '../package.json';
 
-export default function Home() {
+export default function Home(props) {
+  const { liff, liffError } = props;
+
+  if (!liff) return <div>loading</div>;
+  console.log(liff.getVersion());
+
   return (
     <div className={styles.container}>
       <Head>
